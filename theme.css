@@ -1,0 +1,92 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Gill Sans", sans-serif;
+    background-color: #eee;
+    display: flex;
+}
+
+.container{
+    margin: 0 auto;
+    width: 40%;
+}
+
+/* ================= CARD ================== */
+.card{
+    padding: 2rem;
+    margin: 2rem;
+    background-color: #fff;
+    border: 0.1rem solid #6d6d6d; 
+    border-radius: 0.5rem;
+    box-shadow: 0 0.1rem 0.4rem #aaaaaa;
+}
+
+.card-success{
+    border: 0.15rem solid #007F00;
+    background-color: #f5fff5;   
+}
+
+.card-error{
+    border: 0.15rem solid #d32b52 ;
+    background-color: #fffafa;
+}
+
+.card-header{
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #555;
+    font-size: 2rem;
+}
+
+/* ================ FORM ================== */
+.form-group label{
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.form-control{
+    width: 100%;
+    height: 2.5rem;
+    margin: 0.3rem 0 1.5rem 0;
+    padding: 0 0.7rem;
+    border-radius: 0.5rem;
+    border: solid 0.1rem #6d6d6d;
+}
+
+/*=============== BUTTON ============== */
+.btn{
+    padding: 0.75rem;
+    color: #fff;
+    background-color: #007F00;
+    border-radius: 0.5rem;
+    border:none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.btn:hover{
+    opacity: 0.8;
+}
+
+/* ================ TEXT ================== */
+.text-response{
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 600;
+    animation: fade-in .2s ease-out;
+}
+
+@keyframes fade-in {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+}
